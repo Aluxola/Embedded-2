@@ -194,7 +194,7 @@ static void MX_TIM16_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN TIM16_Init 2 */
-  TIM16->DIER |= TIM_DIER_UIE; //what is it kanene??
+  TIM16->DIER |= TIM_DIER_UIE; //Enabling timer Interrupt
   NVIC_EnableIRQ(TIM16_IRQn);
   /* USER CODE END TIM16_Init 2 */
 
